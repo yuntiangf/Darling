@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mintcream"
+            android:orientation="horizontal"
+            android:padding="15dp" >
+            
+            <TextView 
+                android:id="@+id/tab_item"                
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="单    品"
+                android:gravity="center"
+                android:textSize="18sp"/>
+            
+             <TextView 
+                android:text="搭     配"
+                android:id="@+id/tab_match"                                
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/first_item_cursor"
+            android:layout_width="150dp"
+            android:layout_height="3dp"
+            android:background="@color/lightsteelblue" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/first_item_detail_viewPager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"         
+        android:flipInterval="30"  
+        android:persistentDrawingCache="animation" >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

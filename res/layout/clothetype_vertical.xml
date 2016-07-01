@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/type_group"
+    android:background="@drawable/clothestype_bg"   
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_width="80dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:gravity="center_vertical">
+    <RadioButton 
+        android:text="帽子"
+        android:id="@+id/btn_hat"       
+        android:checked="true"    
+        style="@style/clothetype_button"/>
+    <RadioButton 
+        android:id="@+id/btn_scarf"
+        android:text="围巾"
+        style="@style/clothetype_button"/>
+     <RadioButton 
+        android:text="上衣"        
+        android:id="@+id/btn_upper"
+        style="@style/clothetype_button"/>
+     <RadioButton 
+        android:text="包包"        
+        android:id="@+id/btn_bag"
+        style="@style/clothetype_button"/>
+     <RadioButton 
+        android:text="裙装"        
+        android:id="@+id/btn_skirt"
+        style="@style/clothetype_button"/>
+     <RadioButton 
+        android:text="裤装"        
+        android:id="@+id/btn_trousers"
+        style="@style/clothetype_button"/>
+     <RadioButton 
+        android:text="鞋子"        
+        android:id="@+id/btn_shoes"
+        style="@style/clothetype_button"/>
+     <RadioButton 
+        android:text="腰带"        
+        android:id="@+id/btn_belt"
+        style="@style/clothetype_button"/>    
+</RadioGroup>

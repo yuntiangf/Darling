@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+	
+    <com.darling.widget.DragLayout 
+        android:id="@+id/first_draglayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <!--首页第一大部分  -->
+        <FrameLayout
+            android:id="@+id/first_draglayout01"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        </FrameLayout>
+        <!-- 首页第二大部分 女士专区(后来全部放在第一部分中了) -->
+        <FrameLayout
+            android:id="@+id/first_draglayout02"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        </FrameLayout>        
+    </com.darling.widget.DragLayout>
+</LinearLayout>

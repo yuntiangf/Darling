@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 主题的赭色样式的按钮 -->
+    <!--点击背景-->  
+    <item android:state_pressed="true">  
+        <shape>  
+             <!--色值-->  
+            <solid android:color="#DBC184" />  
+            <!--圆角-->  
+            <corners android:radius="10dp" />  
+        </shape>  
+    </item>  
+    <!--默认背景-->  
+    <item>  
+        <shape>  
+            <solid android:color="@color/theme_color" />  
+<!--             <solid android:color="#E3E3E3" /> -->
+            <corners android:radius="10dp" />  
+        </shape>  
+    </item>  
+</selector>  

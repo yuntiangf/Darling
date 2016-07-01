@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/title_back"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/title_back2" >
+        </ImageView>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:layout_weight="4.0"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/detail_buy"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:src="@drawable/detail_buy2" />
+
+            <ImageView
+                android:id="@+id/detail_item"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:src="@drawable/detail_item1" />
+
+            <ImageView
+                android:id="@+id/detail_match"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:src="@drawable/detail_match2" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0" />
+
+            <ImageView
+                android:id="@+id/screen_item"
+                android:layout_width="0dp"
+                android:layout_height="15dp"
+                android:layout_weight="0.8"
+                android:gravity="center"
+                android:src="@drawable/screen_item"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/divider_horizontal" />
+
+    <!-- 必买界面 -->
+
+    <LinearLayout
+        android:id="@+id/layout_buy"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ListView
+            android:id="@+id/detail_buy_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </ListView>
+    </LinearLayout>
+
+    <!-- 单品界面 -->
+
+    <LinearLayout
+        android:id="@+id/layout_item"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8" />
+
+            <ImageView
+                android:id="@+id/item_new"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:src="@drawable/item_new1" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8" />
+
+            <View
+                android:layout_width="1dip"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/divider_horizontal" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8" />
+
+            <ImageView
+                android:id="@+id/item_price"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:src="@drawable/item_price2" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8" />
+
+            <View
+                android:layout_width="1dip"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/divider_horizontal" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8" />
+
+            <ImageView
+                android:id="@+id/item_discount"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:src="@drawable/item_discount2" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/clothes_item1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1.0"
+                        android:src="@drawable/clothes_item1" />
+
+                    <ImageView
+                        android:id="@+id/clothes_item2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="1.0"
+                        android:src="@drawable/clothes_item2" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/clothes_item3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1.0"
+                        android:src="@drawable/clothes_item3" />
+
+                    <ImageView
+                        android:id="@+id/clothes_item4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="1.0"
+                        android:src="@drawable/clothes_item4" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <!-- 搭配界面 -->
+
+    <LinearLayout
+        android:id="@+id/layout_match"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/clothes_match1"
+                        android:layout_width="0dp"
+                        android:layout_height="190dp"
+                        android:layout_weight="1.0"
+                        android:src="@drawable/clothes_match1" />
+
+                    <View
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent" />
+                    
+                    <ImageView
+                        android:id="@+id/clothes_match2"
+                        android:layout_width="0dp"
+                        android:layout_height="190dp"
+                        android:layout_weight="1.0"
+                        android:src="@drawable/clothes_match2" />
+
+                    <View
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent" />
+                    
+                    <ImageView
+                        android:id="@+id/clothes_match3"
+                        android:layout_width="0dp"
+                        android:layout_height="190dp"
+                        android:layout_weight="1.0"
+                        android:src="@drawable/clothes_match3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/clothes_match4"
+                        android:layout_width="0dp"
+                        android:layout_height="190dp"
+                        android:layout_weight="1.0"
+                        android:src="@drawable/clothes_match4" />
+					
+                    <View
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent" />
+                    
+                    <ImageView
+                        android:id="@+id/clothes_match5"
+                        android:layout_width="0dp"
+                        android:layout_height="190dp"
+                        android:layout_weight="1.0"
+                        android:src="@drawable/clothes_match5" />
+					
+                    <View
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent" />
+                    
+                    <ImageView
+                        android:id="@+id/clothes_match6"
+                        android:layout_width="0dp"
+                        android:layout_height="190dp"
+                        android:layout_weight="1.0"
+                        android:src="@drawable/clothes_match6" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/clothes_match7"
+                        android:layout_width="0dp"
+                        android:layout_height="190dp"
+                        android:layout_weight="1.0"
+                        android:src="@drawable/clothes_match7" />
+					
+                    <View
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent" />
+                    
+                    <ImageView
+                        android:id="@+id/clothes_match8"
+                        android:layout_width="0dp"
+                        android:layout_height="190dp"
+                        android:layout_weight="1.0"
+                        android:src="@drawable/clothes_match8" />
+					
+                    <View
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent" />
+                    
+                    <ImageView
+                        android:id="@+id/clothes_match9"
+                        android:layout_width="0dp"
+                        android:layout_height="190dp"
+                        android:layout_weight="1.0"
+                        android:src="@drawable/clothes_match9" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

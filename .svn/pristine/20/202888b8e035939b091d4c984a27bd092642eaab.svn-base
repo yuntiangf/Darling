@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F6F6F6" >
+    <com.darling.ui.BaseTitleLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ></com.darling.ui.BaseTitleLayout>
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:background="@color/white">	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="45dp"
+	        android:gravity="center_vertical"
+	        android:orientation="horizontal" >
+
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:paddingLeft="15dp"
+	            android:text="个人信息设置"
+	            android:textSize="14sp" />
+
+	    </LinearLayout>
+	    <ImageView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/divider_horizontal"/>
+
+	     <LinearLayout
+	         android:layout_width="match_parent"
+	         android:layout_height="45dp"
+	         android:gravity="center_vertical"
+	         android:orientation="horizontal" >
+
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:paddingLeft="15dp"
+	            android:text="账号设置"
+	            android:textSize="14sp" />
+
+	    </LinearLayout>
+	    <ImageView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/divider_horizontal"/>
+
+	     <LinearLayout
+	         android:layout_width="match_parent"
+	         android:layout_height="45dp"
+	         android:gravity="center_vertical"
+	         android:orientation="horizontal" >
+
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:paddingLeft="15dp"
+	            android:text="分享设置"
+	            android:textSize="14sp" />
+	        <Space
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content"></Space>
+
+	        <com.darling.widget.ToggleButton
+	            android:id="@+id/tbtn_share"
+	            android:layout_width="50dp"
+	            android:layout_height="25dp"
+	            android:layout_marginRight="10dp"
+	             />
+	        
+
+	    </LinearLayout>
+	    <ImageView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/divider_horizontal"/>
+	    <LinearLayout
+	         android:layout_width="match_parent"
+	         android:layout_height="45dp"
+	         android:gravity="center_vertical"
+	         android:orientation="horizontal" >
+
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:paddingLeft="15dp"
+	            android:text="银行卡设置"
+	            android:textSize="14sp" />
+	        <Space
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content"></Space>
+
+	        <com.darling.widget.ToggleButton
+	            android:id="@+id/tbtn_card"
+	            android:layout_width="50dp"
+	            android:layout_height="25dp"
+	            android:layout_marginRight="10dp"
+	             />
+
+	    </LinearLayout>
+	   
+	    <ImageView
+	        android:layout_width="match_parent"
+	        android:layout_height="25dp"
+	        android:background="#F6F6F6"></ImageView>
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="45dp"
+	        android:gravity="center_vertical"
+	        android:orientation="horizontal" >
+
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:paddingLeft="15dp"
+	            android:text="清除缓冲"
+	            android:textSize="14sp" />
+			<Space
+			    android:layout_width="0dp"
+			    android:layout_weight="1"
+			    android:layout_height="match_parent"></Space>
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:paddingRight="10dp"
+	            android:text="已使用  12.3M" />
+
+	    </LinearLayout>
+	    <ImageView
+	        android:layout_width="match_parent"
+	        android:layout_height="25dp"
+	        android:background="#F6F6F6"></ImageView>
+	    <LinearLayout
+	         android:layout_width="match_parent"
+	         android:layout_height="45dp"
+	         android:gravity="center_vertical"
+	         android:orientation="horizontal" >
+
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:paddingLeft="15dp"
+	            android:text="帮助反馈"
+	            android:textSize="14sp" />
+	    </LinearLayout>
+	    <ImageView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/divider_horizontal"/>
+	     <LinearLayout
+	         android:layout_width="match_parent"
+	         android:layout_height="45dp"
+	         android:gravity="center_vertical"
+	         android:orientation="horizontal" >
+
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:paddingLeft="15dp"
+	            android:text="关于万搭"
+	            android:textSize="14sp" />
+	    	</LinearLayout>	  
+	    </LinearLayout>	
+	      <Space
+	        android:layout_width="match_parent"
+	        android:layout_height="25dp"></Space>
+	     <LinearLayout
+	         android:layout_width="match_parent"
+	         android:layout_height="wrap_content"
+	         android:gravity="center_vertical"
+	         android:orientation="horizontal" >
+
+	        <Button
+	            android:layout_width="match_parent"
+	            android:layout_height="35dp"
+	            android:layout_marginLeft="20dp"
+	            android:layout_marginRight="20dp"
+	            android:background="@drawable/btn_style_theme"
+	            android:text="退出当前账号"
+	            android:textColor="@color/white"
+	            android:textSize="14sp" />
+  
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,849 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 三分钟出门穿什么 -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+        
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical">
+	    <com.darling.ui.BaseTitleLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        ></com.darling.ui.BaseTitleLayout>
+	     <LinearLayout
+	         android:layout_width="match_parent"
+	         android:layout_height="wrap_content"
+	         android:orientation="vertical" >
+	         <!-- 按风格  -->
+	         <LinearLayout 
+	             android:layout_width="match_parent"
+	             android:layout_height="wrap_content"
+	             android:orientation="horizontal"
+	             android:layout_marginTop="10dp"
+	             android:layout_marginBottom="10dp"
+	             android:gravity="center_vertical">
+	
+	             <TextView
+	                 android:layout_width="wrap_content"
+	                 android:layout_height="20dp"
+	                 android:layout_marginLeft="30dp"
+	                 android:layout_marginTop="5dp"
+	                 android:text="按 风 格 "
+	                 android:textColor="@color/darkgray"
+	                 android:textSize="13sp" />
+	
+	             <ImageView
+	                 android:layout_width="0dp"
+	                 android:layout_height="wrap_content"
+	                 android:layout_weight="1"
+	                 android:layout_marginRight="20dp"
+	                 android:layout_marginLeft="5dp"
+				     android:layout_marginTop="5dp"
+	                 android:background="@drawable/divider" />
+	             
+	         </LinearLayout>
+	
+			<!-- 按风格  第一行-->
+	         <LinearLayout
+	             android:layout_width="match_parent"
+	             android:layout_height="wrap_content"
+	             android:layout_marginTop="10dp"
+	             android:baselineAligned="false"
+	             android:gravity="center"
+	             android:orientation="horizontal" >
+	                 <TextView
+	                     android:layout_width="0dp"
+	                     android:layout_weight="1"
+	                     android:layout_height="wrap_content"
+	                     android:drawablePadding="5dp"
+	                     android:drawableTop="@drawable/style_eu"
+	                     android:gravity="center"
+	                     android:text="欧 美"
+	                     android:textColor="@color/dimgray"
+	                     android:textSize="@dimen/micro_text_size" />
+	                 <TextView
+	                     android:layout_width="0dp"
+	                     android:layout_height="wrap_content"
+	                     android:layout_weight="1"
+	                     android:drawablePadding="5dp"
+	                     android:drawableTop="@drawable/style_jk"
+	                     android:gravity="center"
+	                     android:text="日 韩"
+	                     android:textColor="@color/dimgray"
+	                     android:textSize="@dimen/micro_text_size" />
+	
+	                 <TextView
+	                     android:layout_width="0dp"
+	                     android:layout_height="wrap_content"
+	                     android:layout_weight="1"
+	                     android:drawablePadding="5dp"
+	                     android:drawableTop="@drawable/style_mori"
+	                     android:gravity="center"
+	                     android:text="森 女"
+	                     android:textColor="@color/dimgray"
+	                     android:textSize="@dimen/micro_text_size" />
+	          </LinearLayout>
+	          <!-- 按风格  第二行-->
+	          <LinearLayout
+	             android:layout_width="match_parent"
+	             android:layout_height="wrap_content"
+	             android:baselineAligned="false"
+	             android:gravity="center"
+	             android:orientation="horizontal" >
+	             <LinearLayout
+	                 android:layout_width="0dp"
+	                 android:layout_height="40dp"
+	                 android:orientation="horizontal"
+	                 android:layout_weight="1"
+	                 android:gravity="center"
+	                 >
+	                 <Button
+		                  android:layout_width="60dp"
+		                  android:layout_height="25dp"                 
+		                  android:text="淑  女"          
+		                  android:textSize="12sp" 
+		                  android:textColor="@color/white"
+		                  android:background="@drawable/btn_style_orange"  />    
+	             </LinearLayout>
+	             <LinearLayout
+	                 android:layout_width="0dp"
+	                 android:layout_height="40dp"
+	                 android:orientation="horizontal"
+	                 android:layout_weight="1"
+	                 android:gravity="center"
+	                 >    
+		              <Button
+		                  android:layout_width="60dp"
+		                  android:layout_height="25dp"                 
+		                  android:text="可  爱"          
+		                  android:textSize="12sp" 
+		                  android:textColor="@color/white"
+		                  android:background="@drawable/btn_style_orange"  />
+	              </LinearLayout>
+	              <LinearLayout
+	                 android:layout_width="0dp"
+	                 android:layout_height="40dp"
+	                 android:orientation="horizontal"
+	                 android:layout_weight="1"
+	                 android:gravity="center"
+	                 >    
+		              <Button
+		                  android:layout_width="60dp"
+		                  android:layout_height="25dp"                 
+		                  android:text="性  感"          
+		                  android:textSize="12sp" 
+		                  android:textColor="@color/white"
+		                  android:background="@drawable/btn_style_orange"  />
+	              </LinearLayout>
+	              
+	          </LinearLayout>
+	          <!-- 按风格  第三行-->  
+	          <LinearLayout
+	             android:layout_width="match_parent"
+	             android:layout_height="wrap_content"
+	             android:baselineAligned="false"
+	             android:gravity="center"
+	             android:orientation="horizontal" >
+	             <LinearLayout
+	                 android:layout_width="0dp"
+	                 android:layout_height="40dp"
+	                 android:orientation="horizontal"
+	                 android:layout_weight="1"
+	                 android:gravity="center"
+	                 >
+	                 <Button
+		                  android:layout_width="60dp"
+		                  android:layout_height="25dp"                 
+		                  android:text="优  雅"          
+		                  android:textSize="12sp" 
+		                  android:textColor="@color/white"
+		                  android:background="@drawable/btn_style_orange"  />    
+	             </LinearLayout>
+	             <LinearLayout
+	                 android:layout_width="0dp"
+	                 android:layout_height="30dp"
+	                 android:orientation="horizontal"
+	                 android:layout_weight="1"
+	                 android:gravity="center"
+	                 >    
+		              <Button
+		                  android:layout_width="60dp"
+		                  android:layout_height="25dp"                 
+		                  android:text="清  新"          
+		                  android:textSize="12sp" 
+		                  android:textColor="@color/white"
+		                  android:background="@drawable/btn_style_orange"  />
+	              </LinearLayout>
+	              <LinearLayout
+	                 android:layout_width="0dp"
+	                 android:layout_height="40dp"
+	                 android:orientation="horizontal"
+	                 android:layout_weight="1"
+	                 android:gravity="center"
+	                 >    
+		              <Button
+		                  android:layout_width="60dp"
+		                  android:layout_height="25dp"                 
+		                  android:text="学  院"          
+		                  android:textSize="12sp" 
+		                  android:textColor="@color/white"
+		                  android:background="@drawable/btn_style_orange"  />
+	              </LinearLayout>              
+	          </LinearLayout>    
+	          <!-- 按风格  第四行 复古简约民族-->  
+	          <LinearLayout
+	             android:layout_width="match_parent"
+	             android:layout_height="wrap_content"
+	             android:baselineAligned="false"
+	             android:gravity="center"
+	             android:orientation="horizontal" >
+	             <LinearLayout
+	                 android:layout_width="0dp"
+	                 android:layout_height="40dp"
+	                 android:orientation="horizontal"
+	                 android:layout_weight="1"
+	                 android:gravity="center"
+	                 >
+	                 <Button
+		                  android:layout_width="60dp"
+		                  android:layout_height="25dp"                 
+		                  android:text="复  古"          
+		                  android:textSize="12sp" 
+		                  android:textColor="@color/white"
+		                  android:background="@drawable/btn_style_orange"  />    
+	             </LinearLayout>
+	             <LinearLayout
+	                 android:layout_width="0dp"
+	                 android:layout_height="40dp"
+	                 android:orientation="horizontal"
+	                 android:layout_weight="1"
+	                 android:gravity="center"
+	                 >    
+		              <Button
+		                  android:layout_width="60dp"
+		                  android:layout_height="25dp"                 
+		                  android:text="简  约"          
+		                  android:textSize="12sp" 
+		                  android:textColor="@color/white"
+		                  android:background="@drawable/btn_style_orange"  />
+	              </LinearLayout>
+	              <LinearLayout
+	                 android:layout_width="0dp"
+	                 android:layout_height="40dp"
+	                 android:orientation="horizontal"
+	                 android:layout_weight="1"
+	                 android:gravity="center"
+	                 >    
+		              <Button
+		                  android:layout_width="60dp"
+		                  android:layout_height="25dp"                 
+		                  android:text="民  族"          
+		                  android:textSize="12sp" 
+		                  android:textColor="@color/white"
+		                  android:background="@drawable/btn_style_orange"  />
+	              </LinearLayout>              
+	          </LinearLayout>  
+	          <!-- 按风格  第五行 爵士甜美梦幻-->  
+	          <LinearLayout
+	             android:layout_width="match_parent"
+	             android:layout_height="wrap_content"
+	             android:baselineAligned="false"
+	             android:gravity="center"
+	             android:orientation="horizontal" >
+	             <LinearLayout
+	                 android:layout_width="0dp"
+	                 android:layout_height="40dp"
+	                 android:orientation="horizontal"
+	                 android:layout_weight="1"
+	                 android:gravity="center"
+	                 >
+	                 <Button
+		                  android:layout_width="60dp"
+		                  android:layout_height="25dp"                 
+		                  android:text="爵  士"          
+		                  android:textSize="12sp" 
+		                  android:textColor="@color/white"
+		                  android:background="@drawable/btn_style_orange"  />    
+	             </LinearLayout>
+	             <LinearLayout
+	                 android:layout_width="0dp"
+	                 android:layout_height="40dp"
+	                 android:orientation="horizontal"
+	                 android:layout_weight="1"
+	                 android:gravity="center"
+	                 >    
+		              <Button
+		                  android:layout_width="60dp"
+		                  android:layout_height="25dp"                 
+		                  android:text="甜  美"          
+		                  android:textSize="12sp" 
+		                  android:textColor="@color/white"
+		                  android:background="@drawable/btn_style_orange"  />
+	              </LinearLayout>
+	              <LinearLayout
+	                 android:layout_width="0dp"
+	                 android:layout_height="40dp"
+	                 android:orientation="horizontal"
+	                 android:layout_weight="1"
+	                 android:gravity="center"
+	                 >    
+		              <Button
+		                  android:layout_width="60dp"
+		                  android:layout_height="25dp"                 
+		                  android:text="梦  幻"          
+		                  android:textSize="12sp" 
+		                  android:textColor="@color/white"
+		                  android:background="@drawable/btn_style_orange"  />
+	              </LinearLayout>              
+	          </LinearLayout> 
+	          <!-- 按风格  第六行 女神帅气-->  
+	          <LinearLayout
+	             android:layout_width="match_parent"
+	             android:layout_height="wrap_content"
+	             android:baselineAligned="false"
+	             android:gravity="center"
+	             android:orientation="horizontal" >
+	             <LinearLayout
+	                 android:layout_width="0dp"
+	                 android:layout_height="40dp"
+	                 android:orientation="horizontal"
+	                 android:layout_weight="1"
+	                 android:gravity="center"
+	                 >
+	                 <Button
+		                  android:layout_width="60dp"
+		                  android:layout_height="25dp"                 
+		                  android:text="女  神"          
+		                  android:textSize="12sp" 
+		                  android:textColor="@color/white"
+		                  android:background="@drawable/btn_style_orange"  />    
+	             </LinearLayout>
+	             <LinearLayout
+	                 android:layout_width="0dp"
+	                 android:layout_height="40dp"
+	                 android:orientation="horizontal"
+	                 android:layout_weight="1"
+	                 android:gravity="center"
+	                 >    
+		              <Button
+		                  android:layout_width="60dp"
+		                  android:layout_height="25dp"                 
+		                  android:text="帅  气"          
+		                  android:textSize="12sp" 
+		                  android:textColor="@color/white"
+		                  android:background="@drawable/btn_style_orange"  />
+	              </LinearLayout>
+	              <LinearLayout
+	                 android:layout_width="0dp"
+	                 android:layout_height="40dp"
+	                 android:orientation="horizontal"
+	                 android:layout_weight="1"
+	                 android:gravity="center"
+	                 >
+	              </LinearLayout>              
+	          </LinearLayout> 
+	<!--           <ImageView -->
+	<!-- 		    android:layout_width="match_parent" -->
+	<!-- 		    android:layout_height="wrap_content" -->
+	<!-- 		    android:background="@drawable/divider_horizontal" -->
+	<!-- 		    android:layout_marginLeft="20dp" -->
+	<!-- 		    android:layout_marginRight="20dp" -->
+	<!-- 		    android:layout_marginTop="10dp" -->
+	<!-- 		    android:layout_marginBottom="10dp" -->
+	<!-- 		    ></ImageView> -->
+	          <!-- 按风格  end-->
+	          <!-- 按场景 -->
+	           <LinearLayout 
+	             android:layout_width="match_parent"
+	             android:layout_height="wrap_content"
+	             android:orientation="horizontal"
+	             android:layout_marginTop="10dp"
+	             android:layout_marginBottom="10dp"
+	             android:gravity="center_vertical">
+	
+	             <TextView
+	                 android:layout_width="wrap_content"
+	                 android:layout_height="20dp"
+	                 android:layout_marginLeft="30dp"
+	                 android:layout_marginTop="5dp"
+	                 android:text="按 场 景 "
+	                 android:textColor="@color/darkgray"
+	                 android:textSize="13sp" />
+	
+	             <ImageView
+	                 android:layout_width="0dp"
+	                 android:layout_height="wrap_content"
+	                 android:layout_weight="1"
+	                 android:layout_marginRight="20dp"
+	                 android:layout_marginLeft="5dp"
+				     android:layout_marginTop="5dp"
+	                 android:background="@drawable/divider" />             
+	         </LinearLayout>
+	         <!-- 按场景 第一行 -->
+	         <LinearLayout
+	             android:layout_width="match_parent"
+	             android:layout_height="wrap_content"
+	             android:layout_marginTop="10dp"
+	             android:baselineAligned="false"
+	             android:gravity="center"
+	             android:orientation="horizontal" >
+	                 <TextView
+	                     android:layout_width="0dp"
+	                     android:layout_weight="1"
+	                     android:layout_height="wrap_content"
+	                     android:drawablePadding="5dp"
+	                     android:drawableTop="@drawable/style_eu"
+	                     android:gravity="center"
+	                     android:text="见客户"
+	                     android:textColor="@color/dimgray"
+	                     android:textSize="@dimen/micro_text_size" />
+	                 <TextView
+	                     android:layout_width="0dp"
+	                     android:layout_height="wrap_content"
+	                     android:layout_weight="1"
+	                     android:drawablePadding="5dp"
+	                     android:drawableTop="@drawable/style_jk"
+	                     android:gravity="center"
+	                     android:text="日常办公"
+	                     android:textColor="@color/dimgray"
+	                     android:textSize="@dimen/micro_text_size" />
+	
+	                 <TextView
+	                     android:layout_width="0dp"
+	                     android:layout_height="wrap_content"
+	                     android:layout_weight="1"
+	                     android:drawablePadding="5dp"
+	                     android:drawableTop="@drawable/style_mori"
+	                     android:gravity="center"
+	                     android:text="通 勤"
+	                     android:textColor="@color/dimgray"
+	                     android:textSize="@dimen/micro_text_size" />
+	          </LinearLayout>
+	         <!-- 按场景 第二行 -->
+	          <LinearLayout
+	             android:layout_width="match_parent"
+	             android:layout_height="wrap_content"
+	             android:baselineAligned="false"
+	             android:gravity="center"
+	             android:orientation="horizontal" >
+	             <LinearLayout
+	                 android:layout_width="0dp"
+	                 android:layout_height="40dp"
+	                 android:orientation="horizontal"
+	                 android:layout_weight="1"
+	                 android:gravity="center"
+	                 >
+	                 <Button
+		                  android:layout_width="80dp"
+		                  android:layout_height="25dp"                 
+		                  android:text="重要长辈"          
+		                  android:textSize="12sp" 
+		                  android:textColor="@color/white"
+		                  android:background="@drawable/btn_style_orange"  />    
+	             </LinearLayout>
+	             <LinearLayout
+	                 android:layout_width="0dp"
+	                 android:layout_height="30dp"
+	                 android:orientation="horizontal"
+	                 android:layout_weight="1"
+	                 android:gravity="center"
+	                 >    
+		              <Button
+		                  android:layout_width="80dp"
+		                  android:layout_height="25dp"                 
+		                  android:text="家庭聚餐"          
+		                  android:textSize="12sp" 
+		                  android:textColor="@color/white"
+		                  android:background="@drawable/btn_style_orange"  />
+	              </LinearLayout>
+	              <LinearLayout
+	                 android:layout_width="0dp"
+	                 android:layout_height="40dp"
+	                 android:orientation="horizontal"
+	                 android:layout_weight="1"
+	                 android:gravity="center"
+	                 >    
+		              <Button
+		                  android:layout_width="80dp"
+		                  android:layout_height="25dp"                 
+		                  android:text="正式晚餐"          
+		                  android:textSize="12sp" 
+		                  android:textColor="@color/white"
+		                  android:background="@drawable/btn_style_orange"  />
+	              </LinearLayout>  	               
+	          </LinearLayout>  
+	          <!-- 按场景 第三行 -->
+	          <LinearLayout
+	             android:layout_width="match_parent"
+	             android:layout_height="wrap_content"
+	             android:baselineAligned="false"
+	             android:gravity="center"
+	             android:orientation="horizontal" >
+	              <LinearLayout
+	                 android:layout_width="0dp"
+	                 android:layout_height="40dp"
+	                 android:orientation="horizontal"
+	                 android:layout_weight="1"
+	                 android:gravity="center"
+	                 >    
+		              <Button
+		                  android:layout_width="80dp"
+		                  android:layout_height="25dp"                 
+		                  android:text="恋人约会"          
+		                  android:textSize="12sp" 
+		                  android:textColor="@color/white"
+		                  android:background="@drawable/btn_style_orange"  />
+	              </LinearLayout>             
+	             <LinearLayout
+	                 android:layout_width="0dp"
+	                 android:layout_height="40dp"
+	                 android:orientation="horizontal"
+	                 android:layout_weight="1"
+	                 android:gravity="center"
+	                 >
+	                 <Button
+		                  android:layout_width="80dp"
+		                  android:layout_height="25dp"                 
+		                  android:text="舒服逛街"          
+		                  android:textSize="12sp" 
+		                  android:textColor="@color/white"
+		                  android:background="@drawable/btn_style_orange"  />    
+	             </LinearLayout>
+	             <LinearLayout
+	                 android:layout_width="0dp"
+	                 android:layout_height="30dp"
+	                 android:orientation="horizontal"
+	                 android:layout_weight="1"
+	                 android:gravity="center"
+	                 >    
+		              <Button
+		                  android:layout_width="80dp"
+		                  android:layout_height="25dp"                 
+		                  android:text="街拍达人"          
+		                  android:textSize="12sp" 
+		                  android:textColor="@color/white"
+		                  android:background="@drawable/btn_style_orange"  />
+	              </LinearLayout>
+	                          
+	          </LinearLayout>  
+	          <!-- 按场景 第四行 -->
+	          <LinearLayout
+	             android:layout_width="match_parent"
+	             android:layout_height="wrap_content"
+	             android:baselineAligned="false"
+	             android:gravity="center"
+	             android:orientation="horizontal" >
+	             <LinearLayout
+	                 android:layout_width="0dp"
+	                 android:layout_height="40dp"
+	                 android:orientation="horizontal"
+	                 android:layout_weight="1"
+	                 android:gravity="center"
+	                 >    
+		              <Button
+		                  android:layout_width="80dp"
+		                  android:layout_height="25dp"                 
+		                  android:text="姐妹小聚"          
+		                  android:textSize="12sp" 
+		                  android:textColor="@color/white"
+		                  android:background="@drawable/btn_style_orange"  />
+	              </LinearLayout>  
+	               <LinearLayout
+	                 android:layout_width="0dp"
+	                 android:layout_height="40dp"
+	                 android:orientation="horizontal"
+	                 android:layout_weight="1"
+	                 android:gravity="center"
+	                 >    
+		              <Button
+		                  android:layout_width="80dp"
+		                  android:layout_height="25dp"                 
+		                  android:text="Party嗨翻天"          
+		                  android:textSize="12sp" 
+		                  android:textColor="@color/white"
+		                  android:background="@drawable/btn_style_orange"  />
+	              </LinearLayout> 
+	             <LinearLayout
+	                 android:layout_width="0dp"
+	                 android:layout_height="40dp"
+	                 android:orientation="horizontal"
+	                 android:layout_weight="1"
+	                 android:gravity="center"
+	                 >
+	                 <Button
+		                  android:layout_width="80dp"
+		                  android:layout_height="25dp"                 
+		                  android:text="阳光沙滩"          
+		                  android:textSize="12sp" 
+		                  android:textColor="@color/white"
+		                  android:background="@drawable/btn_style_orange"  />    
+	             </LinearLayout>	                       
+	          </LinearLayout>  
+	          <!-- 按场景 第五行 -->
+	          <LinearLayout 
+	              android:layout_width="match_parent"
+	             android:layout_height="wrap_content"
+	             android:baselineAligned="false"
+	             android:gravity="center"
+	             android:orientation="horizontal">
+	               <LinearLayout
+	                 android:layout_width="0dp"
+	                 android:layout_height="30dp"
+	                 android:orientation="horizontal"
+	                 android:layout_weight="1"
+	                 android:gravity="center"
+	                 >    
+		              <Button
+		                  android:layout_width="80dp"
+		                  android:layout_height="25dp"                 
+		                  android:text="轻松度假"          
+		                  android:textSize="12sp" 
+		                  android:textColor="@color/white"
+		                  android:background="@drawable/btn_style_orange"  />
+	              </LinearLayout>
+	              <LinearLayout
+	                 android:layout_width="0dp"
+	                 android:layout_height="40dp"
+	                 android:orientation="horizontal"
+	                 android:layout_weight="1"
+	                 android:gravity="center"
+	                 >    
+		              <Button
+		                  android:layout_width="80dp"
+		                  android:layout_height="25dp"                 
+		                  android:text="有型赶路"          
+		                  android:textSize="12sp" 
+		                  android:textColor="@color/white"
+		                  android:background="@drawable/btn_style_orange"  />
+	              </LinearLayout>  
+	               <LinearLayout
+	                 android:layout_width="0dp"
+	                 android:layout_height="40dp"
+	                 android:orientation="horizontal"
+	                 android:layout_weight="1"
+	                 android:gravity="center"
+	                 >    
+		              <Button
+		                  android:layout_width="80dp"
+		                  android:layout_height="25dp"                 
+		                  android:text="长途跋涉"          
+		                  android:textSize="12sp" 
+		                  android:textColor="@color/white"
+		                  android:background="@drawable/btn_style_orange"  />
+	              </LinearLayout>
+	          </LinearLayout>
+	          <!-- 按场景搭配 第六行 -->
+	          <LinearLayout
+	             android:layout_width="match_parent"
+	             android:layout_height="wrap_content"
+	             android:baselineAligned="false"
+	             android:gravity="center"
+	             android:orientation="horizontal" >
+	             <LinearLayout
+	                 android:layout_width="0dp"
+	                 android:layout_height="40dp"
+	                 android:orientation="horizontal"
+	                 android:layout_weight="1"
+	                 android:gravity="center"
+	                 >
+	                 <Button
+		                  android:layout_width="80dp"
+		                  android:layout_height="25dp"                 
+		                  android:text="换个心情"          
+		                  android:textSize="12sp" 
+		                  android:textColor="@color/white"
+		                  android:background="@drawable/btn_style_orange"  />    
+	             </LinearLayout>
+	             <LinearLayout
+	                 android:layout_width="0dp"
+	                 android:layout_height="30dp"
+	                 android:orientation="horizontal"
+	                 android:layout_weight="1"
+	                 android:gravity="center"
+	                 >    
+		              <Button
+		                  android:layout_width="80dp"
+		                  android:layout_height="25dp"                 
+		                  android:text="随便摇摇"          
+		                  android:textSize="12sp" 
+		                  android:textColor="@color/white"
+		                  android:background="@drawable/btn_style_orange"  />
+	              </LinearLayout>
+	              <LinearLayout
+	                 android:layout_width="0dp"
+	                 android:layout_height="40dp"
+	                 android:orientation="horizontal"
+	                 android:layout_weight="1"
+	                 android:gravity="center"
+	                 >    
+		              
+	              </LinearLayout>              
+	          </LinearLayout>  
+	          <!-- 按场景 end -->  
+	          <!-- 选件定番 -->
+	          <LinearLayout 
+	             android:layout_width="match_parent"
+	             android:layout_height="wrap_content"
+	             android:orientation="horizontal"
+	             android:layout_marginTop="10dp"
+	             android:layout_marginBottom="10dp"
+	             android:gravity="center_vertical">
+	
+	             <TextView
+	                 android:layout_width="wrap_content"
+	                 android:layout_height="20dp"
+	                 android:layout_marginLeft="30dp"
+	                 android:layout_marginTop="5dp"
+	                 android:text="选件定番 "
+	                 android:textColor="@color/darkgray"
+	                 android:textSize="13sp" />
+	
+	             <ImageView
+	                 android:layout_width="0dp"
+	                 android:layout_height="wrap_content"
+	                 android:layout_weight="1"
+	                 android:layout_marginRight="20dp"
+	                 android:layout_marginLeft="5dp"
+				     android:layout_marginTop="5dp"
+	                 android:background="@drawable/divider" />             
+	         </LinearLayout>
+	          <LinearLayout
+	             android:layout_width="match_parent"
+	             android:layout_height="wrap_content"
+	             android:layout_marginTop="10dp"
+	             android:baselineAligned="false"
+	             android:gravity="center"
+	             android:orientation="horizontal" >
+	                 <TextView
+	                     android:layout_width="0dp"
+	                     android:layout_weight="1"
+	                     android:layout_height="wrap_content"
+	                     android:drawablePadding="5dp"
+	                     android:drawableTop="@drawable/hat"
+	                     android:gravity="center"
+	                     android:text="帽  子"
+	                     android:textColor="@color/dimgray"
+	                     android:textSize="@dimen/micro_text_size" 
+	                     android:onClick="decideByOne"
+	                     android:clickable="true"/>
+	                 <TextView
+	                     android:layout_width="0dp"
+	                     android:layout_height="wrap_content"
+	                     android:layout_weight="1"
+	                     android:drawablePadding="5dp"
+	                     android:drawableTop="@drawable/shoes"
+	                     android:gravity="center"
+	                     android:text="鞋  子"
+	                     android:textColor="@color/dimgray"
+	                     android:textSize="@dimen/micro_text_size"
+	                     android:onClick="decideByOne"
+	                     android:clickable="true" />
+	
+	                 <TextView
+	                     android:layout_width="0dp"
+	                     android:layout_height="wrap_content"
+	                     android:layout_weight="1"
+	                     android:drawablePadding="5dp"
+	                     android:drawableTop="@drawable/upper"
+	                     android:gravity="center"
+	                     android:text="上  衣"
+	                     android:textColor="@color/dimgray"
+	                     android:textSize="@dimen/micro_text_size" 
+	                     android:onClick="decideByOne"
+	                     android:clickable="true"/>
+	                 <TextView
+	                     android:layout_width="0dp"
+	                     android:layout_height="wrap_content"
+	                     android:layout_weight="1"
+	                     android:drawablePadding="5dp"
+	                     android:drawableTop="@drawable/bag"
+	                     android:gravity="center"
+	                     android:text="包  包"
+	                     android:textColor="@color/dimgray"
+	                     android:textSize="@dimen/micro_text_size" 
+	                     android:onClick="decideByOne"
+	                     android:clickable="true"/>
+	          </LinearLayout>
+	          <LinearLayout
+	             android:layout_width="match_parent"
+	             android:layout_height="wrap_content"
+	             android:layout_marginTop="10dp"
+	             android:baselineAligned="false"
+	             android:gravity="center"
+	             android:orientation="horizontal" >
+	                 <TextView
+	                     android:layout_width="0dp"
+	                     android:layout_weight="1"
+	                     android:layout_height="wrap_content"
+	                     android:drawablePadding="5dp"
+	                     android:drawableTop="@drawable/skirt"
+	                     android:gravity="center"
+	                     android:text="裙  装"
+	                     android:textColor="@color/dimgray"
+	                     android:textSize="@dimen/micro_text_size" 
+	                     android:onClick="decideByOne"
+	                     android:clickable="true"/>
+	                 <TextView
+	                     android:layout_width="0dp"
+	                     android:layout_height="wrap_content"
+	                     android:layout_weight="1"
+	                     android:drawablePadding="5dp"
+	                     android:drawableTop="@drawable/trousers"
+	                     android:gravity="center"
+	                     android:text="裤  装"
+	                     android:textColor="@color/dimgray"
+	                     android:textSize="@dimen/micro_text_size" 
+	                     android:onClick="decideByOne"
+	                     android:clickable="true"/>
+	
+	                 <TextView
+	                     android:layout_width="0dp"
+	                     android:layout_height="wrap_content"
+	                     android:layout_weight="1"
+	                     android:drawablePadding="5dp"
+	                     android:drawableTop="@drawable/scarf"
+	                     android:gravity="center"
+	                     android:text="围  巾"
+	                     android:textColor="@color/dimgray"
+	                     android:textSize="@dimen/micro_text_size"
+	                     android:onClick="decideByOne"
+	                     android:clickable="true" />
+	                 <TextView
+	                     android:layout_width="0dp"
+	                     android:layout_height="wrap_content"
+	                     android:layout_weight="1"
+	                     android:drawablePadding="5dp"
+	                     android:drawableTop="@drawable/belt"
+	                     android:gravity="center"
+	                     android:text="腰  带"
+	                     android:textColor="@color/dimgray"
+	                     android:textSize="@dimen/micro_text_size"
+	                     android:onClick="decideByOne"
+	                     android:clickable="true" />
+	          </LinearLayout>
+	          
+	          <!-- 选件定番  end-->
+	    </LinearLayout>
+	    
+	     
+	     
+	    
+		<!-- 搭配列表 -->
+	<!-- 	<ListView -->
+	<!--         android:id="@+id/listView_models" -->
+	<!--         android:layout_width="match_parent" -->
+	<!--    		android:layout_height="0dip" -->
+	<!--    		android:layout_weight="1" -->
+	<!--         android:divider="#96EDEDED" -->
+	<!--         android:dividerHeight="1dip" -->
+	<!--         android:scrollbars="none" -->
+	<!--         > -->
+	        
+	<!--     </ListView> -->    
+	    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+	<com.darling.widget.CustScrollView
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:background="#fff" 
+	    android:id="@+id/scrollView2">
+	    <LinearLayout
+	         android:layout_height="wrap_content"
+		     android:layout_width="match_parent"
+		     android:orientation="vertical"
+	        >
+		    	<!-- 第十模块：女士专区 --> 
+		         <LinearLayout 
+			        android:layout_height="wrap_content"
+			        android:layout_width="match_parent"
+			        android:background="@drawable/divider"></LinearLayout>	
+			        
+			      <TextView 
+			    	    android:layout_width="wrap_content"
+			        	android:layout_height="wrap_content"                
+			        	android:layout_marginLeft="10dp"
+			        	android:layout_marginTop="20dp"
+			        	android:layout_marginBottom="20dp"
+			       		android:text="女士专区"
+			        	android:textColor="#444"
+			        	android:textSize="16sp" ></TextView> 
+		  		<com.darling.widget.LazyScrollView 
+			         android:id="@+id/waterfall_scroll"
+			         android:layout_width="wrap_content"
+			         android:layout_height="wrap_content">  
+			         
+		         <LinearLayout
+		             android:id="@+id/waterfall_container"
+		             android:layout_width="fill_parent"
+		             android:layout_height="fill_parent"
+		             android:background="@android:color/white"
+		             android:orientation="horizontal">	             
+		         </LinearLayout>		         
+		     </com.darling.widget.LazyScrollView>
+			<!-- 第十模块：女士专区 end-->
+		</LinearLayout>
+	</com.darling.widget.CustScrollView>

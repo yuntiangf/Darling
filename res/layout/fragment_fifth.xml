@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 设置  用户信息   -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+        <LinearLayout 
+             android:layout_width="match_parent"
+    		 android:layout_height="wrap_content"
+    		 android:orientation="vertical"> 
+    		 <!-- 第一栏：用户基本信息 -->
+    		 <LinearLayout
+    		     android:layout_width="match_parent"
+    		     android:layout_height="wrap_content"
+    		     android:orientation="vertical"    		     
+    		     android:background="@drawable/user_bg">
+
+    		     <TextView
+    		         android:id="@+id/my_settings"
+    		         android:layout_width="wrap_content"
+    		         android:layout_height="30dp"
+    		         android:layout_gravity="center_vertical|right"
+    		         android:layout_marginRight="20dp"
+    		         android:gravity="center_vertical"
+    		         android:text="设 置"
+    		         android:textSize="15sp" />
+
+    		     <ImageView
+    		         android:layout_width="55dp"
+    		         android:layout_height="55dp"
+    		         android:layout_gravity="center"
+    		         android:src="@drawable/head">    		         
+    		     </ImageView> 
+
+    		     <TextView
+    		         android:layout_width="wrap_content"
+    		         android:layout_height="wrap_content"
+    		         android:layout_gravity="center"
+    		         android:text="dada"
+    		         android:textColor="@color/white"
+    		         android:textSize="16sp" />
+   	
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="撘龄：7个月"
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+	     
+	             <TextView
+	                 android:layout_width="wrap_content"
+	                 android:layout_height="wrap_content"
+	                 android:layout_gravity="center"
+	                 android:layout_margin="5dp"
+	                 android:singleLine="false"
+	                 android:text="“这家伙很懒，什么都没有留下。”"
+	                 android:textColor="@color/white"
+	                 android:textSize="14sp" >
+					</TextView>
+    		     <Space
+    		         android:layout_width="match_parent"
+    		         android:layout_height="15dp"></Space>
+    		     <LinearLayout
+    		         android:layout_width="match_parent"
+    		         android:layout_height="35dp"
+    		         android:orientation="horizontal">
+    		         <LinearLayout 
+					    android:layout_width="0dp"
+					    android:layout_height="match_parent"
+		                android:layout_weight="1"
+		                android:orientation="vertical">
+					     <TextView
+					         android:layout_width="match_parent"
+					         android:layout_height="0dp"
+					         android:layout_weight="1"
+					         android:gravity="bottom|center_horizontal"
+					         android:text="31"
+					         android:textColor="@color/white"
+					         android:textSize="16sp" >
+	
+						</TextView>				    
+					    <TextView
+			                 android:layout_width="match_parent"
+			                 android:layout_height="0dp"
+			                 android:layout_weight="1"
+			                 android:gravity="center_vertical|center_horizontal"
+			                 android:text="粉丝"
+			                 android:textColor="@color/white" ></TextView>
+					</LinearLayout>
+    		        <ImageView
+    		            android:layout_width="wrap_content"
+    		            android:layout_height="match_parent"
+    		            android:background="@drawable/divider_vertical"></ImageView>
+    		        <LinearLayout 
+					    android:layout_width="0dp"
+					    android:layout_height="match_parent"
+		                android:layout_weight="1"
+		                android:orientation="vertical">
+					     <TextView
+					         android:layout_width="match_parent"
+					         android:layout_height="0dp"
+					         android:layout_weight="1"
+					         android:gravity="bottom|center_horizontal"
+					         android:text="23"
+					         android:textColor="@color/white"
+					         android:textSize="16sp" >
+	
+						</TextView>				    
+					    <TextView
+			                 android:layout_width="match_parent"
+			                 android:layout_height="0dp"
+			                 android:layout_weight="1"
+			                 android:gravity="center_vertical|center_horizontal"
+			                 android:text="关注"
+			                 android:textColor="@color/white" ></TextView>
+					</LinearLayout>
+					<ImageView
+    		            android:layout_width="wrap_content"
+    		            android:layout_height="match_parent"
+    		            android:background="@drawable/divider_vertical"></ImageView>
+    		        <LinearLayout 
+					    android:layout_width="0dp"
+					    android:layout_height="match_parent"
+		                android:layout_weight="1"
+		                android:orientation="vertical">
+					     <TextView
+					         android:layout_width="match_parent"
+					         android:layout_height="0dp"
+					         android:layout_weight="1"
+					         android:gravity="bottom|center_horizontal"
+					         android:text="138"
+					         android:textColor="@color/white"
+					         android:textSize="16sp" >
+	
+						</TextView>				    
+					    <TextView
+			                 android:layout_width="match_parent"
+			                 android:layout_height="0dp"
+			                 android:layout_weight="1"
+			                 android:gravity="center_vertical|center_horizontal"
+			                 android:text="喜欢"
+			                 android:textColor="@color/white" ></TextView>					    
+					</LinearLayout>
+					<ImageView
+    		            android:layout_width="wrap_content"
+    		            android:layout_height="match_parent"
+    		            android:background="@drawable/divider_vertical"></ImageView>
+    		        <LinearLayout 
+					    android:layout_width="0dp"
+					    android:layout_height="match_parent"
+		                android:layout_weight="1"
+		                android:orientation="vertical">
+					     <TextView
+					         android:layout_width="match_parent"
+					         android:layout_height="0dp"
+					         android:layout_weight="1"
+					         android:gravity="bottom|center_horizontal"
+					         android:text="42"
+					         android:textColor="@color/white"
+					         android:textSize="16sp" >
+	
+						</TextView>				    
+					    <TextView
+			                 android:layout_width="match_parent"
+			                 android:layout_height="0dp"
+			                 android:layout_weight="1"
+			                 android:gravity="center_vertical|center_horizontal"
+			                 android:text="发表"
+			                 android:textColor="@color/white" ></TextView>
+					</LinearLayout>
+    		     </LinearLayout>
+    		     <Space
+    		         android:layout_width="match_parent"
+    		         android:layout_height="5dp"></Space>	     
+    		 </LinearLayout>
+    		 <!-- 第一栏：用户基本信息  end-->
+    	
+    		 <!-- 第一组 我的万搭-->
+    		 <LinearLayout
+    		     android:layout_width="match_parent"
+    		     android:layout_height="30dp"
+    		     android:background="#F3F3F3"
+    		     android:gravity="center"
+    		     android:orientation="horizontal" >
+
+    		     <TextView
+    		         android:layout_width="wrap_content"
+    		         android:layout_height="wrap_content"
+    		         android:layout_gravity="center|center_horizontal"
+    		         android:text="我的万搭"
+    		         android:textColor="@color/black"
+    		         android:textSize="13sp" ></TextView>
+    		 </LinearLayout>
+    		 
+    		 <TableLayout 
+    		     android:layout_width="match_parent"
+    		     android:layout_height="wrap_content"
+    		     android:layout_marginLeft="5dp"
+    		     android:layout_marginRight="5dp"
+    		     >
+    		    <TableRow 
+    		        android:layout_height="wrap_content"
+    		        android:layout_width="match_parent"
+    		        >
+    		        <LinearLayout
+    		            android:layout_width="0dp"
+    		            android:layout_height="wrap_content"
+    		            android:layout_weight="1"
+    		            android:orientation="vertical"
+    		            android:gravity="center"
+    		            android:id="@+id/my_concerned"
+    		            android:clickable="true">
+    		            <ImageView 
+    		                android:layout_width="40dp"
+    		                android:layout_height="40dp"
+    		                android:layout_margin="10dp"
+    		                android:src="@drawable/my_collect"/>
+
+    		            <TextView
+    		                android:layout_width="wrap_content"
+    		                android:layout_height="wrap_content"
+    		                android:text="我收藏的"
+    		                android:textSize="13sp" >
+						</TextView>
+    		        </LinearLayout>
+    		        <LinearLayout
+    		            android:layout_width="0dp"
+    		            android:layout_height="wrap_content"
+    		            android:layout_weight="1"
+    		            android:orientation="vertical"
+    		            android:gravity="center">
+    		            <ImageView 
+    		                android:layout_width="40dp"
+    		                android:layout_height="40dp"
+    		                android:layout_margin="10dp"
+    		                android:src="@drawable/my_shop"/>
+
+    		            <TextView
+    		                android:layout_width="wrap_content"
+    		                android:layout_height="wrap_content"
+    		                android:text="关注的店铺"
+    		                android:textSize="13sp" >
+						</TextView>
+    		        </LinearLayout>
+    		        <LinearLayout
+    		            android:layout_width="0dp"
+    		            android:layout_height="wrap_content"
+    		            android:layout_weight="1"
+    		            android:orientation="vertical"
+    		            android:gravity="center">
+    		            <ImageView 
+    		                android:layout_width="40dp"
+    		                android:layout_height="40dp"
+    		                android:layout_margin="10dp"
+    		                android:src="@drawable/my_brand"/>
+
+    		            <TextView
+    		                android:layout_width="wrap_content"
+    		                android:layout_height="wrap_content"
+    		                android:text="我爱的品牌"
+    		                android:textSize="13sp" >
+						</TextView>
+    		        </LinearLayout>
+    		    </TableRow> 
+    		 </TableLayout>
+    		 
+	         <TableLayout 
+    		     android:layout_width="match_parent"
+    		     android:layout_height="wrap_content"
+    		     android:layout_marginLeft="5dp"
+    		     android:layout_marginRight="5dp"
+    		     android:layout_marginBottom="10dp"
+    		     >    		    
+    		    <TableRow 
+    		        android:layout_height="wrap_content"
+    		        android:layout_width="match_parent">
+    		        <LinearLayout
+    		            android:layout_width="0dp"
+    		            android:layout_height="wrap_content"
+    		            android:layout_weight="1"
+    		            android:orientation="vertical"
+    		            android:gravity="center">
+    		            <ImageView 
+    		                android:layout_width="40dp"
+    		                android:layout_height="40dp"
+    		                android:layout_margin="10dp"
+    		                android:src="@drawable/my_try"/>
+
+    		            <TextView
+    		                android:layout_width="wrap_content"
+    		                android:layout_height="wrap_content"
+    		                android:text="我的试穿"
+    		                android:textSize="13sp" >
+						</TextView>
+    		        </LinearLayout>    		        
+    		        <LinearLayout
+    		            android:layout_width="0dp"
+    		            android:layout_height="wrap_content"
+    		            android:layout_weight="1"
+    		            android:orientation="vertical"
+    		            android:gravity="center">
+    		            <ImageView 
+    		                android:layout_width="40dp"
+    		                android:layout_height="40dp"
+    		                android:layout_margin="10dp"
+    		                android:src="@drawable/my_recommend"/>
+
+    		            <TextView
+    		                android:layout_width="wrap_content"
+    		                android:layout_height="wrap_content"
+    		                android:text="造型师推荐"
+    		                android:textSize="13sp" >
+						</TextView>
+    		        </LinearLayout>  
+    		        <LinearLayout
+    		            android:layout_width="0dp"
+    		            android:layout_height="wrap_content"
+    		            android:layout_weight="1"
+    		            android:orientation="vertical"
+    		            android:gravity="center">
+    		            <ImageView 
+    		                android:layout_width="40dp"
+    		                android:layout_height="40dp"
+    		                android:layout_margin="10dp"
+    		                android:src="@drawable/my_treasure"/>
+
+    		            <TextView
+    		                android:layout_width="wrap_content"
+    		                android:layout_height="wrap_content"
+    		                android:text="买到的宝贝"
+    		                android:textSize="13sp" >
+						</TextView>
+    		        </LinearLayout>  		        
+    		    </TableRow> 
+    		 </TableLayout>
+    		 <!-- 第一组 我的万搭 end-->
+    		 <!-- 第二组 生活记录-->
+    		 <LinearLayout
+    		     android:layout_width="match_parent"
+    		     android:layout_height="30dp"
+    		     android:background="#F3F3F3"
+    		     android:gravity="center"
+    		     android:orientation="horizontal" >
+
+    		     <TextView
+    		         android:layout_width="wrap_content"
+    		         android:layout_height="wrap_content"
+    		         android:layout_gravity="center|center_horizontal"
+    		         android:text="生活记录"
+    		         android:textColor="@color/black"
+    		         android:textSize="13sp" ></TextView>
+    		 </LinearLayout>
+    		 
+    		 <TableLayout 
+    		     android:layout_width="match_parent"
+    		     android:layout_height="wrap_content"
+    		     android:layout_marginLeft="5dp"
+    		     android:layout_marginRight="5dp"
+    		     >
+    		    <TableRow 
+    		        android:layout_height="wrap_content"
+    		        android:layout_width="match_parent"
+    		        >
+    		        <LinearLayout
+    		            android:layout_width="0dp"
+    		            android:layout_height="wrap_content"
+    		            android:layout_weight="1"
+    		            android:orientation="vertical"
+    		            android:gravity="center">
+    		            <ImageView 
+    		                android:layout_width="40dp"
+    		                android:layout_height="40dp"
+    		                android:layout_margin="10dp"
+    		                android:src="@drawable/my_plan"/>
+
+    		            <TextView
+    		                android:layout_width="wrap_content"
+    		                android:layout_height="wrap_content"
+    		                android:text="完美计划"
+    		                android:textSize="13sp" >
+						</TextView>
+    		        </LinearLayout>
+    		        <LinearLayout
+    		            android:layout_width="0dp"
+    		            android:layout_height="wrap_content"
+    		            android:layout_weight="1"
+    		            android:orientation="vertical"
+    		            android:gravity="center">
+    		            <ImageView 
+    		                android:layout_width="40dp"
+    		                android:layout_height="40dp"
+    		                android:layout_margin="10dp"
+    		                android:src="@drawable/my_pleasure"/>
+
+    		            <TextView
+    		                android:layout_width="wrap_content"
+    		                android:layout_height="wrap_content"
+    		                android:text="吃吃喝喝"
+    		                android:textSize="13sp" >
+						</TextView>
+    		        </LinearLayout>
+    		        <LinearLayout
+    		            android:layout_width="0dp"
+    		            android:layout_height="wrap_content"
+    		            android:layout_weight="1"
+    		            android:orientation="vertical"
+    		            android:gravity="center">
+    		            <ImageView 
+    		                android:layout_width="40dp"
+    		                android:layout_height="40dp"
+    		                android:layout_margin="10dp"
+    		                android:src="@drawable/my_movie"/>
+
+    		            <TextView
+    		                android:layout_width="wrap_content"
+    		                android:layout_height="wrap_content"
+    		                android:text="看电影"
+    		                android:textSize="13sp" >
+						</TextView>
+    		        </LinearLayout>
+    		    </TableRow> 
+    		 </TableLayout>
+    		 
+	         <TableLayout 
+    		     android:layout_width="match_parent"
+    		     android:layout_height="wrap_content"
+    		     android:layout_marginLeft="5dp"
+    		     android:layout_marginRight="5dp"
+    		     android:layout_marginBottom="10dp"
+    		     >    		    
+    		    <TableRow 
+    		        android:layout_height="wrap_content"
+    		        android:layout_width="match_parent">
+    		        <LinearLayout
+    		            android:layout_width="0dp"
+    		            android:layout_height="wrap_content"
+    		            android:layout_weight="1"
+    		            android:orientation="vertical"
+    		            android:gravity="center">
+    		            <ImageView 
+    		                android:layout_width="40dp"
+    		                android:layout_height="40dp"
+    		                android:layout_margin="10dp"
+    		                android:src="@drawable/my_holiday"/>
+
+    		            <TextView
+    		                android:layout_width="wrap_content"
+    		                android:layout_height="wrap_content"
+    		                android:text="度假旅行"
+    		                android:textSize="13sp" >
+						</TextView>
+    		        </LinearLayout>  
+    		        <LinearLayout
+    		            android:layout_width="0dp"
+    		            android:layout_height="wrap_content"
+    		            android:layout_weight="1"
+    		            android:orientation="vertical"
+    		            android:gravity="center">    		            
+    		        </LinearLayout> 
+    		        <LinearLayout
+    		            android:layout_width="0dp"
+    		            android:layout_height="wrap_content"
+    		            android:layout_weight="1"
+    		            android:orientation="vertical"
+    		            android:gravity="center">    		            
+    		        </LinearLayout>  
+    		    </TableRow> 
+    		 </TableLayout>
+    		 <!-- 第二组 生活记录 end -->
+    		 <!-- 第三组 理财达人 -->
+    		 <LinearLayout
+    		     android:layout_width="match_parent"
+    		     android:layout_height="30dp"
+    		     android:background="#F3F3F3"
+    		     android:gravity="center"
+    		     android:orientation="horizontal" >
+
+    		     <TextView
+    		         android:layout_width="wrap_content"
+    		         android:layout_height="wrap_content"
+    		         android:layout_gravity="center|center_horizontal"
+    		         android:text="理财达人"
+    		         android:textColor="@color/black"
+    		         android:textSize="13sp" ></TextView>
+    		 </LinearLayout>
+    		 
+    		 <TableLayout 
+    		     android:layout_width="match_parent"
+    		     android:layout_height="wrap_content"
+    		     android:layout_marginLeft="5dp"
+    		     android:layout_marginRight="5dp"
+    		     >
+    		    <TableRow 
+    		        android:layout_height="wrap_content"
+    		        android:layout_width="match_parent"
+    		        >
+    		        <LinearLayout
+    		            android:layout_width="0dp"
+    		            android:layout_height="wrap_content"
+    		            android:layout_weight="1"
+    		            android:orientation="vertical"
+    		            android:gravity="center">
+    		            <ImageView 
+    		                android:layout_width="40dp"
+    		                android:layout_height="40dp"
+    		                android:layout_margin="10dp"
+    		                android:src="@drawable/my_money"/>
+
+    		            <TextView
+    		                android:layout_width="wrap_content"
+    		                android:layout_height="wrap_content"
+    		                android:text="钱包"
+    		                android:textSize="13sp" >
+						</TextView>
+    		        </LinearLayout>
+    		        <LinearLayout
+    		            android:layout_width="0dp"
+    		            android:layout_height="wrap_content"
+    		            android:layout_weight="1"
+    		            android:orientation="vertical"
+    		            android:gravity="center">
+    		            <ImageView 
+    		                android:layout_width="40dp"
+    		                android:layout_height="40dp"
+    		                android:layout_margin="10dp"
+    		                android:src="@drawable/my_manage_money"/>
+
+    		            <TextView
+    		                android:layout_width="wrap_content"
+    		                android:layout_height="wrap_content"
+    		                android:text="理财"
+    		                android:textSize="13sp" >
+						</TextView>
+    		        </LinearLayout>
+    		        <LinearLayout
+    		            android:layout_width="0dp"
+    		            android:layout_height="wrap_content"
+    		            android:layout_weight="1"
+    		            android:orientation="vertical"
+    		            android:gravity="center">
+    		            <ImageView 
+    		                android:layout_width="40dp"
+    		                android:layout_height="40dp"
+    		                android:layout_margin="10dp"
+    		                android:src="@drawable/my_count"/>
+
+    		            <TextView
+    		                android:layout_width="wrap_content"
+    		                android:layout_height="wrap_content"
+    		                android:text="关联账户"
+    		                android:textSize="13sp" >
+						</TextView>
+    		        </LinearLayout>
+    		    </TableRow> 
+    		 </TableLayout>
+    		 <!-- 第三组 理财达人 end-->
+    	</LinearLayout>
+
+</ScrollView>

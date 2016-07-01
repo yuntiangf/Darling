@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/shake_bg" >
+    <com.darling.ui.BaseTitleLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        ></com.darling.ui.BaseTitleLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <LinearLayout
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_marginLeft="3dp"
+	            android:layout_marginRight="3dp"
+	            android:layout_marginTop="3dp"
+	            android:layout_weight="2"
+	            android:background="@drawable/linearlayout_border"
+	            android:gravity="center" >
+
+	            <ImageView
+	                android:id="@+id/shake_item1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:scaleType="centerInside"
+	                android:src="@drawable/waiting" />
+	        </LinearLayout>
+             <LinearLayout
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_marginRight="3dp"
+	            android:layout_marginTop="3dp"
+	            android:layout_weight="3"
+	            android:orientation="vertical" >
+	            <LinearLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="0dp"
+	                android:layout_weight="1"
+	                android:layout_marginBottom="3dp"
+	                android:gravity="center"
+	                android:background="@drawable/linearlayout_border">
+	                <ImageView
+	                    android:id="@+id/shake_item2"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:scaleType="centerInside" 
+	                	android:src="@drawable/waiting" />
+	            </LinearLayout>
+	            <LinearLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="0dp"
+	                android:layout_weight="1"
+	                android:gravity="center"
+	                android:background="@drawable/linearlayout_border">
+	                <ImageView
+	                    android:id="@+id/shake_item3"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:scaleType="centerInside"
+	                android:src="@drawable/waiting" />
+	            </LinearLayout>	            
+	        </LinearLayout>            
+        </LinearLayout>	        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:layout_margin="3dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/shake_model"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/waiting_big" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="5"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="3dp"
+                    android:background="@drawable/linearlayout_border"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/shake_item4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerInside" 
+	                android:src="@drawable/waiting" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/linearlayout_border"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/shake_item5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerInside"
+	                	android:src="@drawable/waiting"  />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/themePic"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/waiting"></ImageView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

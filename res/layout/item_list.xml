@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    	<com.darling.ui.BaseTitleLayout 
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"></com.darling.ui.BaseTitleLayout>
+    	<LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="100dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:orientation="horizontal">	        
+		    <TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center_vertical"
+			    android:text="单品总数："
+			    android:textSize="16sp" />
+		    <TextView 
+		        android:id="@+id/count"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_vertical"
+		        android:textSize="18sp"
+		        />
+			<Space
+			    android:layout_width="0dp"
+			    android:layout_weight="1"
+			    android:layout_height="match_parent"></Space>
+		   
+	    </LinearLayout>
+	   <com.darling.widget.LazyScrollView 
+	       android:id="@+id/itemlist_waterfall"
+	       android:layout_height="wrap_content"
+	       android:layout_width="wrap_content">
+	       <LinearLayout
+	           android:id="@+id/itemlist_container"
+	           android:layout_width="fill_parent"
+	           android:layout_height="fill_parent"
+	           android:background="@android:color/white"
+	           android:orientation="horizontal">	             
+	       </LinearLayout>		 
+	   </com.darling.widget.LazyScrollView>
+</LinearLayout>

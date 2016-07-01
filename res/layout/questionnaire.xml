@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <com.darling.ui.BaseTitleLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"        
+        ></com.darling.ui.BaseTitleLayout>
+    
+    <!-- 问卷1 -->
+	<LinearLayout 
+	    android:id="@+id/question_1"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1.0"
+	    android:orientation="vertical"
+	    android:gravity="center"
+	    android:visibility="gone">
+	    
+	    <DatePicker 
+		    android:id="@+id/datePicker"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"/>
+		<TextView  
+		    android:id="@+id/show1"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="center"
+		    android:text="请选择您的出生日期……"
+		    android:textSize="18dp"/>
+	</LinearLayout>
+	
+	<!-- 问卷2 -->
+	<LinearLayout  
+	    android:id="@+id/question_2"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1.0"
+	    android:orientation="vertical"
+	    android:gravity="center"
+	    android:visibility="gone">
+	    
+	    <TextView  
+		    android:layout_width="fill_parent"
+		    android:layout_height="50dp"
+		    android:gravity="center"
+		    android:text="身高（cm）"
+		    android:textSize="18dp"/>
+	    
+	    <LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="0dp"
+		    android:layout_weight="1.0"
+		    android:orientation="horizontal"
+		    android:gravity="center">
+	    
+		    <NumberPicker
+			    android:id="@+id/height1"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center"/>
+		    <NumberPicker
+			    android:id="@+id/height2"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center"/>
+		    <NumberPicker
+			    android:id="@+id/height3"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center"/>
+		</LinearLayout>
+		<TextView  
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="center"
+		    android:text="体重（kg）"
+		    android:textSize="18dp"/>
+		<LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="0dp"
+		    android:layout_weight="1.0"
+		    android:orientation="horizontal"
+		    android:gravity="center">
+			
+		    <NumberPicker
+			    android:id="@+id/weight1"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center"/>
+			<NumberPicker
+			    android:id="@+id/weight2"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center"/>
+		</LinearLayout>
+	    
+		<TextView  
+		    android:id="@+id/show2"
+		    android:layout_width="match_parent"
+		    android:layout_height="0dp"
+		    android:layout_weight="1.0"
+		    android:gravity="center"
+		    android:text="请填写您的身高和体重……"
+		    android:textSize="18dp"/>
+	</LinearLayout>
+	
+	<!-- 问卷3 -->
+	<LinearLayout 
+	    android:id="@+id/question_3"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1.0"
+	    android:orientation="vertical"
+	    android:gravity="center"
+	    android:visibility="gone">
+	    
+	    <TextView  
+		    android:layout_width="fill_parent"
+		    android:layout_height="50dp"
+		    android:gravity="center"
+		    android:text="您的脸型是?"
+		    android:textSize="18dp"/>
+	    
+	    <com.darling.widget.GalleryView
+	        android:id="@+id/face_gallery"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content">
+	    </com.darling.widget.GalleryView>
+        <TextView 
+            android:id="@+id/face_name"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="鹅蛋脸"
+            android:textSize="25dp"
+            android:gravity="center"/>
+        <TextView 
+            android:id="@+id/face_describe"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="额头、颧骨宽度一致， 下巴曲线圆润自然"
+            android:textSize="18dp"
+            android:gravity="center"/>
+	</LinearLayout>
+	
+	<!-- 问卷4 -->
+	<LinearLayout 
+	    android:id="@+id/question_4"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1.0"
+	    android:orientation="vertical"
+	    android:gravity="center"
+	    android:visibility="gone">
+	    
+	    <TextView  
+		    android:layout_width="fill_parent"
+		    android:layout_height="50dp"
+		    android:gravity="center"
+		    android:text="您的肤色是?"
+		    android:textSize="18dp"/>
+	    
+	    <com.darling.widget.GalleryView
+	        android:id="@+id/skin_gallery"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content">
+	    </com.darling.widget.GalleryView>
+        <TextView 
+            android:id="@+id/skin_name"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="晶莹白皙"
+            android:textSize="25dp"
+            android:gravity="center"/>
+	</LinearLayout>
+	
+	<!-- 问卷5 -->
+	<LinearLayout 
+	    android:id="@+id/question_5"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1.0"
+	    android:orientation="vertical"
+	    android:gravity="center"
+	    android:visibility="gone">
+	    
+	    <TextView  
+		    android:layout_width="fill_parent"
+		    android:layout_height="50dp"
+		    android:gravity="center"
+		    android:text="上班时我必须穿成这样"
+		    android:textSize="18dp"/>
+	    <TextView  
+	        android:id="@+id/clothes_gallery1_page"
+		    android:layout_width="fill_parent"
+		    android:layout_height="30dp"
+		    android:gravity="center"
+		    android:text="（第一组，共三组）"
+		    android:textSize="18dp"/>
+	    <com.darling.widget.GalleryView
+	        android:id="@+id/clothes_gallery1"
+	        android:layout_width="300dp"
+	        android:layout_height="300dp">
+	    </com.darling.widget.GalleryView>
+	</LinearLayout>
+	
+	<!-- 问卷6 -->
+	<LinearLayout 
+	    android:id="@+id/question_6"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1.0"
+	    android:orientation="vertical"
+	    android:gravity="center"
+	    android:visibility="gone">
+	    
+	    <TextView  
+		    android:layout_width="fill_parent"
+		    android:layout_height="50dp"
+		    android:gravity="center"
+		    android:text="不上班时我最常穿成这样"
+		    android:textSize="18dp"/>
+	    <TextView  
+	        android:id="@+id/clothes_gallery2_page"
+		    android:layout_width="fill_parent"
+		    android:layout_height="30dp"
+		    android:gravity="center"
+		    android:text="（第一组，共七组）"
+		    android:textSize="18dp"/>
+	    <com.darling.widget.GalleryView
+	        android:id="@+id/clothes_gallery2"
+	        android:layout_width="300dp"
+	        android:layout_height="300dp">
+	    </com.darling.widget.GalleryView>
+	</LinearLayout>
+	
+	<!-- 问卷7 -->
+	<LinearLayout 
+	    android:id="@+id/question_7"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1.0"
+	    android:orientation="vertical"
+	    android:gravity="center"
+	    android:visibility="gone">
+	    
+	    <TextView  
+		    android:layout_width="fill_parent"
+		    android:layout_height="50dp"
+		    android:gravity="center"
+		    android:text="我最喜欢的着装风格"
+		    android:textSize="18dp"/>
+	    <TextView  
+	        android:id="@+id/clothes_gallery3_page"
+		    android:layout_width="fill_parent"
+		    android:layout_height="30dp"
+		    android:gravity="center"
+		    android:text="（第一组，共七组）"
+		    android:textSize="18dp"/>
+	    <com.darling.widget.GalleryView
+	        android:id="@+id/clothes_gallery3"
+	        android:layout_width="300dp"
+	        android:layout_height="300dp">
+	    </com.darling.widget.GalleryView>
+	</LinearLayout>
+	
+	<!-- 问卷8 -->
+	<LinearLayout 
+	    android:id="@+id/question_8"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1.0"
+	    android:orientation="vertical"
+	    android:gravity="center"
+	    android:visibility="gone">
+	    
+	    <TextView  
+		    android:layout_width="fill_parent"
+		    android:layout_height="50dp"
+		    android:gravity="center"
+		    android:text="我最想尝试的新风格"
+		    android:textSize="18dp"/>
+	    <TextView  
+	        android:id="@+id/clothes_gallery4_page"
+		    android:layout_width="fill_parent"
+		    android:layout_height="30dp"
+		    android:gravity="center"
+		    android:text="（第一组，共七组）"
+		    android:textSize="18dp"/>
+	    <com.darling.widget.GalleryView
+	        android:id="@+id/clothes_gallery4"
+	        android:layout_width="300dp"
+	        android:layout_height="300dp">
+	    </com.darling.widget.GalleryView>
+	</LinearLayout>
+	
+	<!-- 问卷9 -->
+	<LinearLayout 
+	    android:id="@+id/question_9"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1.0"
+	    android:orientation="vertical"
+	    android:gravity="center"
+	    android:visibility="gone">
+	    
+	    <TextView  
+		    android:layout_width="fill_parent"
+		    android:layout_height="50dp"
+		    android:gravity="center"
+		    android:text="我真心无法接受的风格"
+		    android:textSize="18dp"/>
+	    <TextView  
+	        android:id="@+id/clothes_gallery5_page"
+		    android:layout_width="fill_parent"
+		    android:layout_height="30dp"
+		    android:gravity="center"
+		    android:text="（第一组，共七组）"
+		    android:textSize="18dp"/>
+	    <com.darling.widget.GalleryView
+	        android:id="@+id/clothes_gallery5"
+	        android:layout_width="300dp"
+	        android:layout_height="300dp">
+	    </com.darling.widget.GalleryView>
+	</LinearLayout>
+	
+	<!-- 问卷10 -->
+	<LinearLayout 
+	    android:id="@+id/question_10"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1.0"
+	    android:orientation="vertical"
+	    android:visibility="gone">
+	    
+	    <TextView 
+		    android:layout_width="fill_parent"
+		    android:layout_height="80dp"
+		    android:text="以下场合在我生活中出现的频率"
+		    android:textSize="23dp"
+		    android:gravity="center"/>
+		<ListView 
+		    android:id="@+id/question_list"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content">
+	</ListView>
+	</LinearLayout>
+	
+	<!-- 问卷11 -->
+	<LinearLayout  
+	    android:id="@+id/question_11"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1.0"
+	    android:orientation="vertical"
+	    android:gravity="center"
+	    android:visibility="gone">
+	    
+	    <RelativeLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="50dp">
+			<LinearLayout 
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:gravity="center">
+			    <TextView  
+				    android:layout_width="wrap_content"
+				    android:layout_height="50dp"
+				    android:gravity="center"
+				    android:text="平时常穿的服装尺码"
+				    android:textSize="23dp"/>
+			</LinearLayout>
+		    <TextView
+		        android:id="@+id/size_transform"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="尺码对照"
+		        android:textColor="@color/red"
+		        android:textSize="12dp" 
+		        android:layout_alignParentRight="true"/>
+	    </RelativeLayout>
+	    <LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="0dp"
+		    android:layout_weight="1.0"
+		    android:orientation="horizontal"
+		    android:gravity="center">
+	    	<TextView  
+			    android:layout_width="wrap_content"
+			    android:layout_height="match_parent"
+			    android:gravity="center"
+			    android:text="上衣"
+			    android:textSize="20dp"/>
+	        <NumberPicker
+				android:id="@+id/size_upper"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:orientation="horizontal"/>
+	    </LinearLayout>
+		<LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="0dp"
+		    android:layout_weight="1.0"
+		    android:orientation="horizontal"
+		    android:gravity="center">
+			
+			<TextView  
+			    android:layout_width="wrap_content"
+			    android:layout_height="match_parent"
+			    android:gravity="center"
+			    android:text="裤子"
+			    android:textSize="20dp"/>
+		    <NumberPicker
+			    android:id="@+id/size_trouser1"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center"/>
+			<NumberPicker
+			    android:id="@+id/size_trouser2"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center"/>
+		</LinearLayout>
+		<LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="0dp"
+		    android:layout_weight="1.0"
+		    android:orientation="horizontal"
+		    android:gravity="center">
+			
+			<TextView  
+			    android:layout_width="wrap_content"
+			    android:layout_height="match_parent"
+			    android:gravity="center"
+			    android:text="鞋子"
+			    android:textSize="20dp"/>
+		    <NumberPicker
+			    android:id="@+id/size_shoes1"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center"/>
+			<NumberPicker
+			    android:id="@+id/size_shoes2"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center"/>
+		</LinearLayout>
+		<TextView  
+		    android:id="@+id/show3"
+		    android:layout_width="match_parent"
+		    android:layout_height="0dp"
+		    android:layout_weight="1.0"
+		    android:gravity="center"
+		    android:text="请填写您的服装基本尺码……"
+		    android:textSize="18dp"/>
+	</LinearLayout>
+	
+	<!-- 问卷12 -->
+	<LinearLayout 
+	    android:id="@+id/question_12"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1.0"
+	    android:orientation="vertical"
+	    android:visibility="gone">
+	    
+	    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="希望造型师突出展示的身体部位"
+            android:textSize="18dp"/>
+	    
+	    <com.darling.widget.KeywordsFlow 
+	        android:id="@+id/keywordsflow1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1.0"
+	        android:background="@drawable/loginbg">
+			
+	    </com.darling.widget.KeywordsFlow>
+	    
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="bottom"
+	        android:layout_margin="5dp"
+	        android:orientation="horizontal" >
+
+	        <TextView
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1.0"
+	            android:gravity="left"
+	            android:padding="10dp"
+	            android:text="选择的标签："/>
+	
+	        <TextView
+	            android:id="@+id/clear_Tags1"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1.0"
+	            android:gravity="right"
+	            android:padding="10dp"
+	            android:textColor="@color/red"
+	            android:text="清除选择的标签" />
+    </LinearLayout>
+    
+    <TextView
+            android:id="@+id/add_Tags1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3.0"
+            android:gravity="center"
+            android:text=""/>
+	</LinearLayout>
+	
+	<!-- 问卷13 -->
+	<LinearLayout 
+	    android:id="@+id/question_13"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1.0"
+	    android:orientation="vertical"
+	    android:visibility="gone">
+	    
+	    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="希望造型师改善的身材问题"
+            android:textSize="18dp"/>
+	    
+	    <com.darling.widget.KeywordsFlow 
+	        android:id="@+id/keywordsflow2"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1.0"
+	        android:background="@drawable/loginbg">
+			
+	    </com.darling.widget.KeywordsFlow>
+	    
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="bottom"
+	        android:layout_margin="5dp"
+	        android:orientation="horizontal" >
+
+	        <TextView
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1.0"
+	            android:gravity="left"
+	            android:padding="10dp"
+	            android:text="选择的标签："/>
+	
+	        <TextView
+	            android:id="@+id/clear_Tags2"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1.0"
+	            android:gravity="right"
+	            android:padding="10dp"
+	            android:textColor="@color/red"
+	            android:text="清除选择的标签" />
+    </LinearLayout>
+    
+    <TextView
+            android:id="@+id/add_Tags2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3.0"
+            android:gravity="center"
+            android:text=""/>
+	</LinearLayout>
+	
+	<!-- 页码 -->
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        
+	    <Button 
+	        android:id="@+id/previous_page"
+	        android:layout_width="0dp"
+	        android:layout_weight="1.0"
+	        android:layout_height="wrap_content"
+	        android:text="上一页"
+	        android:textSize="23dp"
+	        android:gravity="center"/>
+	    <LinearLayout 
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1.0"
+	        android:gravity="center">
+	        <TextView 
+		        android:id="@+id/page_number"
+		        android:layout_width="30dp"
+		        android:layout_height="match_parent"
+		        android:text="1"
+		        android:textSize="20dp"
+		        android:gravity="center"
+		        android:textColor="@color/red"/>
+		   <TextView 
+		        android:layout_width="50dp"
+		        android:layout_height="match_parent"
+		        android:text="/13"
+		        android:textSize="20dp"
+		        android:gravity="center"/>
+	    </LinearLayout>
+	    
+	    <Button 
+	        android:id="@+id/next_page"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1.0"
+	        android:text="下一页"
+	        android:textSize="23dp"
+	        android:gravity="center"/>
+	</LinearLayout>
+</LinearLayout>

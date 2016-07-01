@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.darling.ui.BaseTitleLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"        
+        ></com.darling.ui.BaseTitleLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#8DEDED"
+        android:gravity="center">
+        
+        <ImageView 
+            android:id="@+id/detail_category"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:src="@drawable/category_selected"/>
+        <View 
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#ffffff"/>
+        <TextView 
+            android:id="@+id/detail_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="单品"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="@color/red"/>
+        <View 
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#ffffff"/>
+        <TextView 
+            android:id="@+id/detail_match"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="搭配"
+            android:textSize="20dp"
+            android:gravity="center"/>
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        
+        <ListView
+            android:id="@+id/cg_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@drawable/devider_line"
+            android:scrollbars="none" 
+            android:background="#fffff0"
+            android:layout_weight="4.0"/>
+
+		<!-- 单品界面 -->
+        <GridView 
+		    android:id="@+id/detail_grid"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:verticalSpacing="10dp"
+		    android:horizontalSpacing="10dp"
+		    android:numColumns="2"
+		    android:fadeScrollbars="true"
+		    android:gravity="center"
+		    android:layout_weight="1.0"
+		    android:visibility="visible">
+    
+		</GridView>
+		
+        <!-- 搭配界面 -->
+		<LinearLayout 
+		    android:id="@+id/detail_match_view"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_weight="1.0"
+		    android:visibility="gone"
+		    android:orientation="vertical"
+		    android:background="#ffffff">
+		    
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="0dp"
+		        android:layout_weight="1.0">
+		        
+		        <ImageView 
+		            android:id="@+id/match_clothes"
+		            android:layout_width="0dp"
+		            android:layout_height="match_parent"
+		            android:layout_weight="2.0"
+		            android:src="@drawable/item1"/>
+		
+		        <RelativeLayout 
+		            android:layout_width="66dp"
+		            android:layout_height="match_parent"
+		            android:layout_gravity="right">
+		            
+		            <ImageView
+			            android:id="@+id/match_buy1"
+			            android:layout_width="39dp"
+			            android:layout_height="39dp"
+			            android:layout_alignParentRight="true"
+			            android:layout_marginRight="15dp"
+			            android:layout_marginTop="5dp"
+			            android:src="@drawable/buy"/>
+		            
+		            
+		            <LinearLayout 
+			            android:layout_width="match_parent"
+			            android:layout_height="60dp"
+			            android:orientation="vertical"
+			            android:layout_alignParentBottom="true">
+			            
+		                <TextView 
+			                android:id="@+id/chuanda"
+			                android:layout_width="match_parent"
+			                android:layout_height="wrap_content"
+			                android:text="我穿我搭"
+			                android:textSize="15dp"
+			                android:gravity="center"/>
+		                
+		                <View 
+			                android:layout_width="match_parent"
+			                android:layout_height="2dp"
+			                android:background="@drawable/liner"/>
+		                <LinearLayout 
+				            android:id="@+id/like"
+		                    android:layout_width="match_parent"
+		                    android:layout_height="wrap_content"
+		                    android:orientation="horizontal">
+		                    
+		                    <ImageView 
+							    android:layout_width="0dp"
+							    android:layout_height="wrap_content"
+							    android:layout_weight="1.0"
+							    android:gravity="center"
+							    android:src="@drawable/wxh"/>
+		                    <TextView 
+				                android:layout_width="0dp"
+				                android:layout_height="wrap_content"
+				                android:layout_weight="1.0"
+				                android:text="Like"
+				                android:textStyle="bold"
+				                android:textSize="15dp"
+				                android:gravity="center"/>
+		                </LinearLayout>
+		                <View 
+			                android:layout_width="match_parent"
+			                android:layout_height="2dp"
+			                android:background="@drawable/liner"/>
+		            </LinearLayout>
+		            
+		        </RelativeLayout>
+		    </LinearLayout>
+		    <View 
+			    android:layout_width="match_parent"
+			    android:layout_height="5dp"
+			    android:background="@drawable/divider"/>
+		    <ImageView 
+		        android:id="@+id/match_image"
+			    android:layout_width="match_parent"
+			    android:layout_height="0dp"
+			    android:layout_weight="1.0"
+			    android:src="@drawable/model1_item1"/>
+		    <View 
+			    android:layout_width="match_parent"
+			    android:layout_height="5dp"
+			    android:background="@drawable/divider"/>
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="0dp"
+		        android:layout_weight="1.0"
+		        android:orientation="vertical">
+		        
+		        <TextView 
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="搭配方案"
+		            android:textSize="20dp"
+		            android:gravity="center"/>
+		        <GridView 
+				    android:id="@+id/match_grid"
+				    android:layout_width="match_parent"
+				    android:layout_height="match_parent"
+				    android:verticalSpacing="10dp"
+				    android:horizontalSpacing="10dp"
+				    android:numColumns="3"
+				    android:fadeScrollbars="true"
+				    android:gravity="center">
+				</GridView>
+		    </LinearLayout>
+		    <LinearLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="39dp"
+		        android:orientation="horizontal"
+			    android:background="@color/lavender">
+		        
+		        <TextView 
+		            android:id="@+id/match_order"
+		            android:layout_width="0dp"
+		            android:layout_height="match_parent"
+		            android:layout_weight="2.0"
+		            android:text="预约试穿"
+		            android:textSize="18dp"
+		            android:gravity="center"/>
+		        <View 
+		            android:layout_width="1dp"
+		            android:layout_height="match_parent"
+		            android:background="#ffffff"/>
+		        
+		        <ImageView
+			            android:id="@+id/match_buy2"
+			            android:layout_width="0dp"
+			            android:layout_height="40dp"
+			            android:layout_weight="1.5"
+			            android:src="@drawable/buy"/>
+		        
+		        <View 
+		            android:layout_width="1dp"
+		            android:layout_height="match_parent"
+		            android:background="#ffffff"/>
+		        
+		        <TextView 
+		            android:id="@+id/buy_now"
+		            android:layout_width="0dp"
+		            android:layout_height="match_parent"
+		            android:layout_weight="2.0"
+		            android:text="立即购买"
+		            android:textSize="18dp"
+		            android:gravity="center"/>
+    		</LinearLayout>
+		</LinearLayout>
+     </LinearLayout>
+</LinearLayout>

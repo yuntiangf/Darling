@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- layout边框。填充透明。圆角 ，白色边框-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+  
+    <!-- 填充 -->
+    <solid android:color="#00FFFFFF" />  
+    <!-- 边框 --> 
+    <stroke  
+        android:width="0.001dp"  
+        android:color="@color/white" />  
+    <!-- 边距 -->  
+    <padding  
+        android:bottom="1dp"  
+        android:left="1dp"  
+        android:right="1dp"  
+        android:top="1dp" /> 
+    <!-- 圆角 --> 
+    <corners 
+        android:radius="20dp"/>
+
+</shape>
